@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap");
+
+:root {
+	--green: #1db954;
+	--lightGreen: #1ed760;
+	--grey: #919496;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100dvw;
+	min-height: 100dvh;
+	font-family: "Inter", "sans-serif";
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1 {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 8rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 1rem;
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+.navbar-logo-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+.navbar-logo {
+	width: 12rem;
+	height: fit-content;
+}
+
+.nav-items {
+	display: flex;
+	gap: 1.5rem;
+	width: 50%;
+}
+
+.nav-item {
+	font-size: 24px;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+	transition: color 0.2s ease-in-out;
+}
+
+.nav-item:nth-child(2) {
+	border-right: 2px solid #fff;
+	padding-right: 1.2rem;
+}
+
+.nav-item:hover {
+	color: var(--green);
+}
+
+.main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url("./assets/img/main-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  gap: 0.7rem;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.main-title {
+	font-size: 5rem;
+	font-weight: 600;
+	color: #fff;
+}
+
+.main-description-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-description {
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+.main-button {
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: 1.5rem 4rem;
+	border-radius: 2rem;
+	text-transform: uppercase;
+	background-color: var(--green);
+	color: #fff;
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+}
+
+.main-button:hover {
+	background-color: var(--lightGreen);
+	scale: 1.05;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	min-height: 20rem;
+	width: 100%;
+	padding: 5rem 0 4rem 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #000;
+}
+
+.footer-items {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 4rem;
+	height: 100%;
+	width: 100%;
+}
+
+.footer-items-row {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.footer-logo-container {
+	display: flex;
+	justify-content: center;
+	flex-basis: 30%;
+}
+
+.footer-logo {
+	width: 12rem;
+	height: fit-content;
+}
+
+.footer-nav-items {
+	display: flex;
+	justify-content: space-around;
+	flex-basis: 40%;
+	font-size: 1.3rem;
+	color: #fff;
+}
+
+.footer-nav-item {
+	transition: color 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.footer-nav-item:hover {
+	color: var(--lightGreen);
+}
+
+.footer-nav-items-column {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.footer-nav-items-column-title {
+	color: var(--grey);
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.footer-social-media {
+	display: flex;
+	justify-content: center;
+	gap: 2.5rem;
+	flex-basis: 30%;
+}
+
+.footer-social-media-icon {
+	color: #fff;
+	font-size: 2.5rem;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.footer-social-media-icon:hover {
+	color: var(--lightGreen);
+}
+
+.footer-items-row:nth-child(2) {
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+}
+
+.footer-second-nav-items {
+	display: flex;
+	gap: 1rem;
+	color: var(--grey);
+	margin-left: 12rem;
+}
+
+.footer-second-nav-item {
+	cursor: pointer;
+	transition: color 0.1s ease-in-out;
+}
+
+.footer-second-nav-item:hover {
+	color: var(--lightGreen);
+}
+
+.copyright-container {
+	margin-right: 12rem;
+	color: var(--grey);
+  text-align:right;
+}
+
+.country-info {
+	display: flex;
+	align-items: center;
+  justify-content: flex-end;
+	gap: 0.5rem;
+}
+
+.country-info-name {
+	font-size: 1.2rem;
+	transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.country-info-name:hover {
+	color: var(--lightGreen);
+}
